@@ -4,70 +4,77 @@ framework_version: 1.1.1
 
 # Candidate Profile
 
-<!-- SETUP: This file is populated by running /setup -->
-<!-- After running /setup, all sections will be filled with your actual information -->
-
 ## Identity
-- **Name:** [YOUR_NAME]
-- **Location:** [YOUR_ADDRESS]
-- **Phone:** [YOUR_PHONE]
-- **Email:** [YOUR_EMAIL]
-- **LinkedIn:** [YOUR_LINKEDIN_URL]
-- **GitHub:** [YOUR_GITHUB_URL]
-- **Status:** [YOUR_EMPLOYMENT_STATUS]
-- **Constraints:** [YOUR_COMMUTE_OR_LOCATION_CONSTRAINTS]
+- **Name:** Edmund Lee Chen Loong
+- **Location:** Kuala Lumpur, Malaysia
+- **Phone:** +60 12-320 0868
+- **Email:** ewedmundlee2004@gmail.com
+- **LinkedIn:** https://linkedin.com/in/edmund-lee-0185a2284
+- **GitHub:** _none on file_
+- **Status:** Full-time undergraduate (Year 2, entering Year 3) at Monash University Malaysia, freelancing concurrently for two digital agencies. Seeking an SEO or PPC internship for the next semester break (3-4 month placement).
+- **Constraints:** Klang Valley / KL metro, onsite or hybrid. Commute over roughly an hour each way is a deal-breaker. Must fit around university teaching commitments outside a formal placement window.
 
 ### Languages
-<!-- Every language you can work in professionally, with your honest level. Used by the
-Language Gate in 04-job-evaluation.md and by job-scraper/search-queries.md's query-language
-generation. Omit any language you don't actually work in - an undeclared language is treated as
-a hard no, not a gap to smooth over. -->
 
 | Language | Level | Notes |
 |----------|-------|-------|
-| [LANGUAGE] | [LEVEL, e.g. "Native" / "C2" / "B1/B2 (conversational)"] | [optional] |
+| English | Fluent | CV, cover letters and interviews are conducted in English |
+| Mandarin | Fluent | Opens Chinese-language client and agency work in KL |
+| Malay | Conversational | Sufficient for day-to-day workplace use, not for drafting copy |
 
 ## Education
 
 | Degree | Period | Institution | Key Topics |
 |--------|--------|-------------|------------|
-| [DEGREE] | [YEARS] | [INSTITUTION] | [TOPICS] |
+| Bachelor of Business and Commerce - Major in Digital Marketing, Minor in Business Analytics | Year 2, entering Year 3; expected Nov 2028 | Monash University Malaysia | Marketing Analytics, Social Media Marketing, Data Mining and Predictive Modelling, Unsupervised Learning for Business. WAM: 70 (Distinction) |
 
 ## Professional Experience
 
-### [JOB_TITLE] - [COMPANY] ([START] - [END])
-[LOCATION]
-- [RESPONSIBILITY_OR_ACHIEVEMENT_1]
-- [RESPONSIBILITY_OR_ACHIEVEMENT_2]
-- [RESPONSIBILITY_OR_ACHIEVEMENT_3]
+### Freelance Web Developer - TTIM Marketing Sdn Bhd (Feb 2025 - Present)
+Malaysia (remote)
+- Increased a vending machine supplier's landing page conversion rate (form opt-ins) from 4% to 14% over a 3-month campaign driven by Google Ads and organic search, planning and running all page testing independently
+- Analysed Microsoft Clarity heatmaps and session recordings and found visitors lacked proof the product worked; proposed moving customer results from the company's internal onboarding slides onto the page as a results carousel to attract higher-intent leads
+- Designed and built a website for a nonprofit dog shelter
 
-<!-- Add more roles as needed -->
+### Freelance Web Developer - Pixelmites Digital Sdn Bhd (Aug 2024 - Present)
+Malaysia (remote)
+- Cut the agency's website load time from 7 seconds to under 1 second, a key technical SEO factor: migrated to a hosting platform with Cloudflare DNS, compressed images and video, removed hero and background video loading, optimised memory usage and tuned caching settings, diagnosing bottlenecks with PageSpeed Insights and Chrome DevTools
+- Rebuilt a cluttered landing page for an NLP coaching program after Clarity recordings showed visitors did not know where to look; the new page converted Facebook and Instagram ad traffic at 6%, with more sign-ups attending sessions with cameras on
+- Built and maintained client websites in WordPress and PHP across multiple industries, turning client business goals into conversion-focused pages
+
+**Across both roles:** delivered 10+ web projects from design through launch.
 
 ## Independent Projects
-<!-- Projects outside of employment: freelance, open source, personal -->
-- **[PROJECT_NAME]**: [DESCRIPTION]
+- **Nonprofit dog shelter website**: designed and built end to end (delivered through the TTIM Marketing engagement)
 
 ## Technical Skills
 
-### Programming & ML
-- **[LANGUAGE]** ([PROFICIENCY]): [FRAMEWORKS_AND_LIBRARIES]
-- [OTHER_SKILLS]
+### Programming & Web
+- **PHP / WordPress** (working): client site build and maintenance across multiple industries
+- **HTML / CSS / JavaScript** (working): landing page build, layout and on-page changes
+- **Python** (basic-working): data analysis; Udemy data science and ML bootcamp
+- **R** (basic): coursework in analytics and predictive modelling
 
 ### Domain Expertise
-- [DOMAIN_1]
-- [DOMAIN_2]
+- Technical SEO and web performance (page speed, caching, CDN/DNS, asset optimisation)
+- Conversion rate optimisation: landing page testing, heatmap and session-recording analysis
+- Landing pages for paid traffic (Google Ads, Facebook/Instagram Ads) and organic search
+- Marketing analytics and predictive modelling (coursework plus applied GA4 use)
 
 ### Software & Tools
-- [TOOL_LIST]
+WordPress, Cloudflare DNS, PageSpeed Insights, Chrome DevTools, Microsoft Clarity, Google Analytics 4 (basic), Google Ads / Meta Ads (landing-page side), Excel, Google Sheets, Canva, Python, R
+
+## Certifications
+- **Python for Data Science and Machine Learning Bootcamp** - Udemy <!-- CONFIRM: completion date and hours -->
 
 ## Publications
-<!-- List peer-reviewed publications, if any -->
-1. [AUTHOR_LIST] ([YEAR]). [TITLE]. [JOURNAL]. [DOI_LINK]
+None to date.
 
 ## Awards
-- [AWARD] - [EVENT] ([YEAR])
+None to date.
 
 ## References
-- [NAME], [TITLE], [COMPANY] ([EMAIL], [PHONE])
+<!-- CONFIRM: no referees on file. Your two agency contacts at TTIM Marketing and Pixelmites
+     Digital are the obvious candidates - ask them before listing, then add name, title and contact. -->
 
-More references available upon request.
+References available upon request.

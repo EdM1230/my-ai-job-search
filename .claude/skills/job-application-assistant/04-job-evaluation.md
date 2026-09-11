@@ -30,6 +30,10 @@ If the candidate's permit also constrains *hours* or *start date* (a student vis
 
 A role that fails this gate is not scored and not drafted. Everything below applies only to roles that pass it.
 
+**Candidate-specific note (Edmund Lee Chen Loong):**
+- **Citizenship / work rights:** [TO CONFIRM] - not recorded during setup. Confirm your status so this gate can run properly on Malaysian postings and on any regional (Singapore) roles.
+- **Hours / availability gate:** Full-time Monash Malaysia undergraduate. A 3-4 month placement is targeted for the **next semester break**; outside that window, availability is limited to hours that fit around teaching commitments. Treat a posting demanding full-time hours during term as a FLAG, and record the exact break dates here once known.
+
 ## Language Gate — run before scoring
 
 This gate checks a posting's language requirements against what the candidate actually speaks. It is not one of the five Scoring Dimensions below - it runs before them, structured the same way as the Eligibility Gate above: read the posting, classify against profile data, and treat a hard mismatch as FAIL before scoring. Its verdict is tracked downstream: `/rank` records the result as `language_gate` (PASS/FAIL/FLAG) with a supporting `language_note`, persists both into `seen_jobs.json`, and treats a FAIL as a shortlist veto; `/scrape` surfaces the flag in its results table and carries a language-override rule for postings whose ad language differs from the role's working language. `/apply`'s language detection (Step 1, which extracts a posting's required language generically) feeds this same check.
@@ -60,9 +64,9 @@ How well do the required/preferred skills align with the candidate's capabilitie
 | 40-59 | Partial match, significant upskilling needed |
 | 0-39 | Fundamental mismatch |
 
-**Strong match areas:** [YOUR_PRIMARY_SKILLS]
-**Moderate match areas:** [YOUR_SECONDARY_SKILLS]
-**Weak match areas:** [SKILLS_YOU_LACK]
+**Strong match areas:** Technical SEO and page-speed optimisation (Core Web Vitals, caching, Cloudflare DNS, asset optimisation), landing-page CRO and A/B testing, heatmap and session-recording analysis (Microsoft Clarity), WordPress/PHP, HTML/CSS/JavaScript
+**Moderate match areas:** Google Analytics 4 (basic), landing pages built for Google Ads and Meta Ads traffic, Python and R for analysis, Excel/Google Sheets, Canva
+**Weak match areas:** Hands-on paid campaign management (bidding, budget pacing, keyword research at scale, ad copy testing), Google Ads/Meta Ads platform certifications, Google Tag Manager, Looker Studio, SEO content strategy and link building, Screaming Frog/Ahrefs/SEMrush tooling, advanced GA4
 
 ### 2. Experience Match (0-100)
 Does work history align with what they're looking for? Match on the function and nature of the work performed, not the literal job title - a "Data Consultant" and a "Data Scientist" role can be functionally identical.
@@ -74,9 +78,9 @@ Does work history align with what they're looking for? Match on the function and
 | 40-59 | Adjacent experience, would need to make the case |
 | 0-39 | Unrelated experience |
 
-**Strong:** [YOUR_DIRECT_EXPERIENCE_DOMAINS]
-**Moderate:** [YOUR_ADJACENT_EXPERIENCE]
-**Entry-level:** [ROLES_WITH_LIMITED_EXPERIENCE]
+**Strong:** Web build and technical optimisation for agency clients; conversion-focused landing pages for paid and organic traffic
+**Moderate:** Marketing analytics and reporting; working directly with agency clients to turn business goals into page changes
+**Entry-level:** SEO specialist, PPC/paid search executive, performance marketing, growth marketing. Note: all professional experience to date is freelance, not employed; this is a first structured internship.
 
 ### 3. Behavioral/Culture Fit (0-100)
 Does the role and company culture match the behavioral profile?
@@ -107,19 +111,19 @@ Does this role advance career goals and contain tasks that energize?
 | 0-39 | Dead end or backwards step |
 
 **Career goals:**
-- [YOUR_CAREER_GOAL_1]
-- [YOUR_CAREER_GOAL_2]
-- [YOUR_CAREER_GOAL_3]
+- Convert freelance web/CRO work into a structured SEO or PPC internship at a digital or performance marketing agency (next semester break, 3-4 months)
+- Close the paid-media execution gap: move from building the landing page to also running the campaign that drives traffic to it
+- Graduate (Nov 2028) with an agency-side track record and analytics depth, positioned for a performance marketing role rather than a generalist marketing one
 
 **Motivation filter:** Evaluate not just whether you *can* do the tasks, but whether the tasks will *energize* you. Consider:
-- Tasks that energize: [YOUR_ENERGIZING_TASKS]
-- Tasks that drain: [YOUR_DRAINING_TASKS]
+- Tasks that energize: diagnosing why a page underperforms from real behavioural data, then shipping the fix and watching the number move; technical optimisation with a measurable result
+- Tasks that drain: [TO CONFIRM - tell Claude which tasks you actively dislike, so /apply can down-rank postings built around them]
 - Non-task factors: leadership style, department culture, company values, degree of autonomy
 
 **Life situation alignment:** Consider personal constraints:
-- **Security**: [YOUR_FINANCIAL_SITUATION_CONTEXT]
-- **Flexibility**: [YOUR_SCHEDULE_CONSTRAINTS]
-- **Professional development**: [YOUR_GROWTH_PRIORITIES]
+- **Security**: Full-time student with concurrent freelance income from two agencies. Unpaid internships and token-allowance roles are a stated deal-breaker; the placement must pay a real allowance.
+- **Flexibility**: Targeting the next university semester break for a 3-4 month placement. Outside that window, work must fit around Monash teaching commitments. Klang Valley, onsite or hybrid; commute beyond roughly an hour each way is a deal-breaker.
+- **Professional development**: Priority is mentorship from experienced SEO/PPC practitioners and exposure to live campaign management - the half of performance marketing the freelance work has not covered.
 
 ### 6. Salary Benchmark (Optional)
 

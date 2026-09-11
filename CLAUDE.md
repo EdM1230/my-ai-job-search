@@ -1,10 +1,10 @@
-# Job Application Assistant for [YOUR_NAME]
+# Job Application Assistant for Edmund Lee Chen Loong
 
 <!-- SETUP: This file is populated by running /setup -->
 <!-- After running /setup, all [PLACEHOLDER] tokens will be replaced with your actual information -->
 
 ## Role
-This repo is a job application workspace. Claude acts as a career advisor and application assistant for [YOUR_NAME], helping with:
+This repo is a job application workspace. Claude acts as a career advisor and application assistant for Edmund Lee Chen Loong, helping with:
 1. **Job fit evaluation** - Assess job postings against your profile (skills, experience, behavioral traits)
 2. **CV tailoring** - Adapt existing CV templates (LaTeX/moderncv) to target specific roles
 3. **Cover letter writing** - Draft targeted cover letters using existing templates (LaTeX)
@@ -13,79 +13,78 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 
 ## Candidate Profile
 
-<!-- This section is auto-populated by /setup. You can also fill it in manually. -->
-
 ### Identity
-- **Name:** [YOUR_NAME]
-- **Location:** [YOUR_CITY], [YOUR_COUNTRY] ([YOUR_COMMUTE_CONSTRAINTS])
+- **Name:** Edmund Lee Chen Loong
+- **Location:** Kuala Lumpur, Malaysia (Klang Valley; onsite or hybrid, commute up to ~1 hour each way)
+- **Phone:** +60 12-320 0868
+- **Email:** ewedmundlee2004@gmail.com
+- **LinkedIn:** https://linkedin.com/in/edmund-lee-0185a2284
 - **Languages:**
   | Language | Level |
   |----------|-------|
-  | [LANGUAGE] | [LEVEL] |
-  <!-- Every language you work in professionally, with your level (CEFR, "native," "professional
-  working proficiency," whatever your CV/LinkedIn use - no need to force it into one scale). An
-  undeclared language is a hard deal-breaker if a posting requires it; a declared language at a
-  lower level than a posting wants is flagged for your own judgment, not auto-rejected. See
-  04-job-evaluation.md's Language Gate. -->
-- **CV language:** [YOUR_CV_LANGUAGE] <!-- English unless your market expects otherwise; /setup asks -->
+  | English | Fluent |
+  | Mandarin | Fluent |
+  | Malay | Conversational |
+- **CV language:** English
 
-- **Status:** [YOUR_EMPLOYMENT_STATUS]
-- **LinkedIn headline:** "[YOUR_LINKEDIN_HEADLINE]"
+- **Status:** Full-time undergraduate (Year 2, entering Year 3) at Monash University Malaysia, concurrently freelancing for two digital agencies. Seeking an SEO or PPC internship for the next semester break (3-4 month placement).
+- **LinkedIn headline:** "Digital Marketing Student | Seeking SEO / PPC Internship" <!-- CONFIRM: taken from the CV tagline; update if your actual LinkedIn headline differs -->
 
 ### Education
-<!-- List your degrees, most recent first -->
-- **[DEGREE_LEVEL] in [FIELD]** ([YEAR_START]-[YEAR_END]) - [INSTITUTION]
-  - Thesis: "[THESIS_TITLE]"
-  - Topics: [KEY_TOPICS]
+- **Bachelor of Business and Commerce** (expected Nov 2028) - Monash University Malaysia
+  - Major in Digital Marketing, Minor in Business Analytics
+  - WAM: 70 (Distinction)
+  - Year 2, entering Year 3 <!-- CONFIRM: enrolment start year not stated on the CV -->
+  - Relevant units: Marketing Analytics, Social Media Marketing, Data Mining and Predictive Modelling, Unsupervised Learning for Business
 
 ### Professional Experience
-<!-- List your roles, most recent first -->
-- **[JOB_TITLE]** ([START_DATE] - [END_DATE]) - **[COMPANY]** ([LOCATION])
-  - [KEY_RESPONSIBILITY_1]
-  - [KEY_RESPONSIBILITY_2]
-  - [KEY_ACHIEVEMENT]
+- **Freelance Web Developer** (Feb 2025 - Present) - **TTIM Marketing Sdn Bhd** (Malaysia, remote)
+  - Increased a vending machine supplier's landing page conversion rate (form opt-ins) from 4% to 14% over a 3-month campaign driven by Google Ads and organic search, planning and running all page testing independently
+  - Analysed Microsoft Clarity heatmaps and session recordings, identified that visitors lacked proof the product worked, and proposed moving customer results from internal onboarding slides onto the page as a results carousel to attract higher-intent leads
+  - Designed and built a website for a nonprofit dog shelter
+
+- **Freelance Web Developer** (Aug 2024 - Present) - **Pixelmites Digital Sdn Bhd** (Malaysia, remote)
+  - Cut the agency's website load time from 7 seconds to under 1 second, a key technical SEO factor: migrated to a hosting platform with Cloudflare DNS, compressed images and video, removed hero and background video loading, optimised memory usage and tuned caching settings, diagnosing bottlenecks with PageSpeed Insights and Chrome DevTools
+  - Rebuilt a cluttered landing page for an NLP coaching program after Clarity recordings showed visitors did not know where to look; the new page converted Facebook and Instagram ad traffic at 6%, with more sign-ups attending sessions with cameras on
+  - Built and maintained client websites in WordPress and PHP across multiple industries, turning client business goals into conversion-focused pages
+
+- **Across both roles:** delivered 10+ web projects from design through launch.
 
 ### Technical Skills
-- **Primary:** [YOUR_PRIMARY_SKILLS]
-- **Secondary:** [YOUR_SECONDARY_SKILLS]
-- **Domain:** [YOUR_DOMAIN_EXPERTISE]
-- **Software:** [YOUR_TOOLS_AND_SOFTWARE]
+- **Primary:** Technical SEO and page-speed optimisation, landing-page CRO and independent A/B testing, WordPress, PHP, HTML/CSS, JavaScript
+- **Secondary:** Google Analytics 4 (basic), Microsoft Clarity (heatmaps, session recordings), Excel, Google Sheets, Python, R
+- **Domain:** Technical SEO, conversion rate optimisation, landing pages for Google Ads and Meta ads, web performance, marketing analytics
+- **Software:** WordPress, Cloudflare DNS, PageSpeed Insights, Chrome DevTools, Microsoft Clarity, Google Analytics 4, Canva, Excel, Google Sheets, Python, R
 
 ### Certifications
-<!-- List relevant certifications with dates -->
-- **[CERTIFICATION_NAME]** - [HOURS]h - completed [DATE]
+- **Python for Data Science and Machine Learning Bootcamp** - Udemy <!-- CONFIRM: completion date and hours not stated on the CV -->
 
 ### Publications
-<!-- List peer-reviewed publications, if any -->
-- [AUTHOR_LIST] ([YEAR]). [TITLE]. [JOURNAL].
+- None to date.
 
 ### Awards
-<!-- List relevant awards, hackathons, competitions -->
-- [AWARD_NAME] - [EVENT] ([YEAR])
+- None to date.
 
 ### Behavioral Profile
-<!-- Your behavioral assessment results (PI, DISC, Myers-Briggs, or self-assessment) -->
-- **[TRAIT_1]** - [DESCRIPTION]
-- **[TRAIT_2]** - [DESCRIPTION]
-- **Strengths:** [YOUR_STRENGTHS]
-- **Growth areas:** [YOUR_GROWTH_AREAS]
-- **Thrives in:** [YOUR_IDEAL_ENVIRONMENT]
+<!-- DERIVED from documented behaviour in the CV, not from a formal assessment (PI/DISC/etc.).
+     Review critically and correct - these traits shape every cover letter and interview answer. -->
+- **Self-directed operator** - Planned and ran a 3-month landing page test programme independently, without a supervising marketer
+- **Diagnostic before prescriptive** - Reaches for evidence (Clarity recordings, PageSpeed Insights, DevTools) to locate the real problem before proposing a fix; both headline results came from diagnosis, not guesswork
+- **Technical-commercial translator** - Comfortable moving between hosting/caching internals and the conversion outcome a client actually cares about
+- **Strengths:** Measurable ownership of outcomes; comfort with ambiguity in an unstructured freelance setting; combines build skills with analysis rather than handing off
+- **Growth areas:** [TO CONFIRM - tell Claude what you find genuinely hard; do not leave invented weaknesses here]
+- **Thrives in:** [TO CONFIRM - e.g. autonomy with a senior to learn from, fast client turnaround, structured mentorship]
 
 ### What Excites You
-<!-- What motivates you professionally -->
-- [PASSION_1]
-- [PASSION_2]
+- [TO CONFIRM - what part of SEO/PPC work you would do unpaid on a weekend]
+- [TO CONFIRM - a second motivator]
 
 ### Target Sectors
-<!-- Industries and companies you're targeting -->
-- [SECTOR_1]: [EXAMPLE_COMPANIES]
-- [SECTOR_2]: [EXAMPLE_COMPANIES]
+- Digital / performance marketing agencies: SEO, PPC and CRO agencies - closest to the freelance work already done for TTIM Marketing and Pixelmites Digital
 
 ### Deal-breakers
-<!-- Hard constraints on job search. Language requirements are handled separately and
-automatically from your Languages table above - don't duplicate them here. -->
-- [DEALBREAKER_1]
-- [DEALBREAKER_2]
+- Unpaid internships, or roles paying only a token allowance below a real living wage
+- Commute substantially over ~1 hour each way from the Klang Valley
 
 ## Repo Structure
 - `cv/` - LaTeX CV variants (moderncv template, banking style)
@@ -118,7 +117,7 @@ After creating or updating a CV or cover letter, re-read the generated file and 
 - [ ] Nice-to-have requirements are highlighted where there is a match
 
 ### Consistency
-- [ ] CV follows the standard 2-page moderncv/banking format
+- [ ] CV follows the standard moderncv/banking format at the page length set below
 - [ ] Cover letter uses cover.cls template and established structure
 - [ ] Tone is consistent across CV and cover letter
 - [ ] No contradictions between CV and cover letter content
@@ -134,7 +133,7 @@ After creating or updating a CV or cover letter, re-read the generated file and 
 ### Compiled PDF verification (MANDATORY - never skip)
 Both documents MUST be compiled and visually inspected via the Read tool on the PDF output. "Looks fine in the .tex" is not acceptable - LaTeX page-break decisions are unpredictable. Iterate until these all pass:
 - [ ] CV compiled with **lualatex** (pdflatex often fails on modern MiKTeX with fontawesome5 font-expansion errors). Cover letter compiled with **xelatex** (cover.cls requires fontspec). If a custom template is active (registered via `/add-template`), compile with its declared command instead — see the `ACTIVE-TEMPLATE` block in `05-cv-templates.md`/`06-cover-letter-templates.md`.
-- [ ] **CV is exactly 2 pages** - not 1, not 3
+- [ ] **CV is exactly 1 page** - not 2. Early-career target length: a second-year undergraduate with two freelance roles does not have two pages of honest content, and padding to fill a second page means inventing or inflating material, which contradicts the Factual accuracy rules above. `cv/main_example.tex` uses `geometry scale=0.87` and a merged Certifications & Languages section to fit cleanly on one page. **Revisit this once real experience accumulates** (after an internship plus more projects), at which point the upstream default of exactly 2 pages becomes the right target.
 - [ ] **No orphaned `\cventry` titles** - a job/education title must never sit at the bottom of a page with its bullets spilling to the next page. Use `\needspace{5\baselineskip}` before each `\cventry` to prevent this, and `\enlargethispage{2-3\baselineskip}` to rescue a trailing section that just barely spills
 - [ ] **Cover letter is exactly 1 page** - signature block must fit with the body, never overflow
 - [ ] **Cover letter bullet font matches body font** - `\lettercontent{}` must not wrap `\begin{itemize}...\end{itemize}` (the command's trailing `\\` errors on `\end{itemize}`, and moving itemize outside loses the Raleway font). Standard pattern: close `\lettercontent{}`, then wrap the list in `{\raggedright\fontspec[Path = OpenFonts/fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{13pt}\selectfont \begin{itemize}...\end{itemize}\par}`

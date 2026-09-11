@@ -52,7 +52,7 @@ Expected output: `Output written on main_<company>_<role>.pdf (2 pages, ...)`. A
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=blue,
-    pdftitle={[YOUR_NAME] - CV},
+    pdftitle={Edmund Lee Chen Loong - CV},
     % Keep pdfpagemode=UseNone: this block runs after moderncv's own
     % \AtEndPreamble (moderncv.cls sets pdfpagemode there), so a FullScreen
     % value here would win and open every CV in fullscreen presentation mode.
@@ -62,13 +62,13 @@ Expected output: `Output written on main_<company>_<role>.pdf (2 pages, ...)`. A
 \usepackage{import}
 
 % Personal data
-\name{[FIRST_NAME]}{[LAST_NAME]}
+\name{Edmund}{Lee Chen Loong}
 % If you have no address to list, DELETE this whole line. \address{}{}{} fails
 % with "There's no line here to end" on every moderncv version.
-\address{[YOUR_ADDRESS]}{}{}
-\phone[mobile]{[YOUR_PHONE]}
-\email{[YOUR_EMAIL]}
-\extrainfo{\href{[YOUR_LINKEDIN_URL]}{LinkedIn}, \href{[YOUR_GITHUB_URL]}{GitHub}}
+\address{Kuala Lumpur, Malaysia}{}{}
+\phone[mobile]{+60 12-320 0868}
+\email{ewedmundlee2004@gmail.com}
+\extrainfo{\href{https://linkedin.com/in/edmund-lee-0185a2284}{LinkedIn}}
 
 \begin{document}
 \makecvtitle
@@ -130,11 +130,18 @@ When the role sits outside your home domain, **lead with the domain-transfer arg
 **Create 2-3 profile statement templates for your main role types:**
 
 <!-- SETUP: These are populated based on your background -->
-**For [YOUR_PRIMARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_1]
+**For SEO / technical SEO roles:**
+> Digital Marketing student at Monash University Malaysia (Minor in Business Analytics, WAM 70) with hands-on technical SEO experience from two agency freelance engagements. Cut an agency website's load time from 7 seconds to under 1 second - migrating hosting, moving DNS to Cloudflare, compressing assets and tuning caching, with bottlenecks diagnosed in PageSpeed Insights and Chrome DevTools. Comfortable in the page itself: WordPress, PHP, HTML/CSS and JavaScript, not just the audit tool's report. Backs technical work with analysis in GA4, Excel, Python and R. Seeking an SEO internship where site performance and measurable ranking outcomes matter.
 
-**For [YOUR_SECONDARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_2]
+**For PPC / paid search / performance marketing roles:**
+> Digital Marketing student at Monash University Malaysia (Minor in Business Analytics, WAM 70) who has spent two years building the landing pages that paid traffic lands on. Took a vending machine supplier's page from a 4% to a 14% form opt-in rate across a 3-month Google Ads and organic campaign, planning and running every test independently; rebuilt an NLP coaching program's page to convert Facebook and Instagram traffic at 6%. Works from behavioural evidence - Microsoft Clarity heatmaps and session recordings - rather than guesswork. Seeking a PPC internship to pair that conversion-side track record with hands-on campaign management.
+
+**For CRO / growth / analytics-leaning roles:**
+> Digital Marketing and Business Analytics student with a freelance record of finding why pages underperform and fixing it. Both headline results started from a diagnosis: Clarity recordings showed visitors lacked proof a product worked, and showed visitors of a cluttered page did not know where to look - the fixes moved conversion from 4% to 14% and delivered 6% on paid social traffic respectively. Combines that with Marketing Analytics, Data Mining and Unsupervised Learning coursework and working Python, R and GA4 skills. Seeking a role where experimentation and measurement drive the work.
+
+<!-- Written by /setup from the CV. Every factual claim above traces to 01-candidate-profile.md.
+     Note what is deliberately absent: no hands-on ad campaign management, no platform
+     certifications, no advanced GA4/GTM. Do not add them to a tailored statement. -->
 
 Statements labeled *[Used for: <company>_<role>]* were extracted from archived application drafts by `/setup` Path A. They are **phrasing references, never fact sources**: when drafting from one, every factual claim still comes from `01-candidate-profile.md` - a past tailored draft does not vouch for its own accuracy.
 

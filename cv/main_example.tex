@@ -1,8 +1,7 @@
-%% Example CV - [YOUR_NAME]
+%% Example CV - Edmund Lee Chen Loong
 %% Comprehensive overview of all competencies, experience, and achievements.
 %% Use as a master reference when tailoring role-specific CVs.
 %%
-%% SETUP: Run /setup to populate this with your actual information.
 %% Compile with: lualatex main_example.tex
 %% (pdflatex often fails on modern MiKTeX with fontawesome5 font-expansion errors.)
 
@@ -33,23 +32,24 @@
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=blue,
-    pdftitle={[YOUR_NAME] - CV},
+    pdftitle={Edmund Lee Chen Loong - CV},
     % Keep pdfpagemode=UseNone: this block runs after moderncv's own
     % \AtEndPreamble (moderncv.cls sets pdfpagemode there), so a FullScreen
     % value here would win and open every CV in fullscreen presentation mode.
     pdfpagemode=UseNone,
 }}
-\usepackage[scale=0.80]{geometry}
+\usepackage[scale=0.87]{geometry}
 \usepackage{import}
+\usepackage{needspace}
 
 % personal data
-\name{[First]}{[Last]}
+\name{Edmund}{Lee Chen Loong}
 % If you have no address to list, DELETE this whole line. \address{}{}{} fails
 % with "There's no line here to end" on every moderncv version.
-\address{[Your Address, City, Country]}{}{}
-\phone[mobile]{[+XX XXXXXXXXXX]}
-\email{[your.email@example.com]}
-\extrainfo{\href{[https://linkedin.com/in/your-profile]}{LinkedIn}, \href{[https://github.com/your-username]}{GitHub}}
+\address{Kuala Lumpur, Malaysia}{}{}
+\phone[mobile]{+60 12-320 0868}
+\email{ewedmundlee2004@gmail.com}
+\extrainfo{\href{https://linkedin.com/in/edmund-lee-0185a2284}{LinkedIn}}
 
 \begin{document}
 
@@ -60,7 +60,7 @@
 % ============================================================
 
 \vspace{6pt}
-\small{[Write a 3-5 line profile statement tailored to the role you're applying for. Focus on what makes you uniquely qualified. Example: "Data scientist with a PhD in [field] and X years of industry experience. Combines deep domain expertise in [domain] with strong applied machine learning and Python development skills. Experienced in developing end-to-end ML pipelines, from data ingestion to stakeholder-facing dashboards."]}
+\small{Digital Marketing student at Monash University Malaysia (Minor in Business Analytics, WAM 70) with two years of freelance experience across two digital agencies. Builds and optimises the landing pages that Google Ads, Meta ads and organic search traffic arrives on --- taking one page from a 4\% to a 14\% form opt-in rate, and cutting an agency website's load time from 7 seconds to under 1 second. Works from behavioural evidence rather than guesswork, and backs technical work with analysis in GA4, Excel, Python and R. Seeking an SEO or PPC internship.}
 
 % ============================================================
 %     CORE COMPETENCIES
@@ -70,15 +70,15 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item \textbf{[Skill Category 1]}: [Specific skills, frameworks, tools. Be concrete.]
+\item \textbf{Technical SEO \& Web Performance}: Page speed optimisation, Core Web Vitals, caching strategy, Cloudflare DNS, image and video compression, PageSpeed Insights, Chrome DevTools.
 
-\item \textbf{[Skill Category 2]}: [Specific skills, frameworks, tools.]
+\item \textbf{Conversion Optimisation}: Landing page CRO, independent A/B and page testing, Microsoft Clarity heatmaps and session recordings, conversion-focused page structure.
 
-\item \textbf{[Skill Category 3]}: [Specific skills, frameworks, tools.]
+\item \textbf{Paid \& Organic Traffic}: Landing pages built for Google Ads, Facebook and Instagram ad traffic, and organic search; qualifying traffic for higher-intent leads.
 
-\item \textbf{[Skill Category 4]}: [Domain expertise, methods, approaches.]
+\item \textbf{Web Development}: WordPress, PHP, HTML/CSS, JavaScript; site builds and maintenance across multiple client industries.
 
-\item \textbf{[Skill Category 5]}: [Tools, platforms, software.]
+\item \textbf{Data \& Analytics}: Google Analytics 4 (basic), Excel, Google Sheets, Python, R; marketing analytics, data mining and predictive modelling coursework.
 
 \end{itemize}
 
@@ -90,35 +90,28 @@
 \vspace{3pt}
 \begin{itemize}
 
-% --- Most Recent Role ---
-\item{\cventry{[YYYY-Present]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\needspace{5\baselineskip}
+\item{\cventry{Feb 2025--Present}{Freelance Web Developer}{TTIM Marketing Sdn Bhd}{Malaysia}{}{\vspace{1pt}
 \begin{itemize}
-    \item {[Achievement or responsibility 1 - be specific, use numbers where possible]}
-    \item {[Achievement or responsibility 2]}
-    \item {[Achievement or responsibility 3]}
-    \item {[Achievement or responsibility 4]}
+    \item {Increased a vending machine supplier's landing page conversion rate (form opt-ins) from 4\% to 14\% over a 3-month campaign driven by Google Ads and organic search, planning and running all page testing independently}
+    \item {Analysed Microsoft Clarity heatmaps and session recordings and found visitors lacked proof the product worked; proposed moving customer results from the company's internal onboarding slides onto the page as a results carousel to attract higher-intent leads}
+    \item {Designed and built a website for a nonprofit dog shelter}
 \end{itemize}}}
 
 \vspace{3pt}
 
-% --- Previous Role ---
-\item{\cventry{[YYYY-YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\needspace{5\baselineskip}
+\item{\cventry{Aug 2024--Present}{Freelance Web Developer}{Pixelmites Digital Sdn Bhd}{Malaysia}{}{\vspace{1pt}
 \begin{itemize}
-    \item {[Achievement or responsibility 1]}
-    \item {[Achievement or responsibility 2]}
-    \item {[Achievement or responsibility 3]}
-\end{itemize}}}
-
-\vspace{3pt}
-
-% --- Earlier Role ---
-\item{\cventry{[YYYY-YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
-\begin{itemize}
-    \item {[Achievement or responsibility 1]}
-    \item {[Achievement or responsibility 2]}
+    \item {Cut the agency's website load time from 7 seconds to under 1 second, a key technical SEO factor: migrated to a hosting platform with Cloudflare DNS, compressed images and video, removed hero and background video loading, optimised memory usage and tuned caching settings, diagnosing bottlenecks with PageSpeed Insights and Chrome DevTools}
+    \item {Rebuilt a cluttered landing page for an NLP coaching program after Clarity recordings showed visitors did not know where to look; the new page converted Facebook and Instagram ad traffic at 6\%, with more sign-ups attending sessions with cameras on}
+    \item {Built and maintained client websites in WordPress and PHP across multiple industries, turning client business goals into conversion-focused pages}
 \end{itemize}}}
 
 \end{itemize}
+
+\vspace{2pt}
+\small{Across both roles: delivered 10+ web projects from design through launch.}
 
 % ============================================================
 %     EDUCATION
@@ -128,56 +121,24 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item{\cventry{[YYYY-YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-Thesis: ``[Thesis Title].'' [Brief description of research focus.]
-}}
-
-\vspace{3pt}
-
-\item{\cventry{[YYYY-YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-[Brief description or key topics.]
+\needspace{5\baselineskip}
+\item{\cventry{Expected Nov 2028}{Bachelor of Business and Commerce}{Monash University Malaysia}{Malaysia}{}{\vspace{1pt}
+Major in Digital Marketing, Minor in Business Analytics. WAM: 70 (Distinction). Year 2, entering Year 3.
+Relevant units: Marketing Analytics, Social Media Marketing, Data Mining and Predictive Modelling, Unsupervised Learning for Business.
 }}
 
 \end{itemize}
 
 % ============================================================
-%     LANGUAGES
+%     CERTIFICATIONS, LANGUAGES & REFERENCES
 % ============================================================
 
-\section{Languages}
+\section{Certifications \& Languages}
 \vspace{1pt}
 \begin{itemize}
-\item {[Language 1] (native), [Language 2] (fluent), [Language 3] (intermediate).}
-\end{itemize}
-
-% ============================================================
-%     PUBLICATIONS (optional)
-% ============================================================
-
-\section{Publications}
-\vspace{1pt}
-\begin{itemize}
-\item {[Author(s)] ([Year]). [Title]. [Journal/Conference]. \href{[DOI_URL]}{DOI link}}
-\end{itemize}
-
-% ============================================================
-%     HONORS AND AWARDS (optional)
-% ============================================================
-
-\section{Honors and Awards}
-\vspace{1pt}
-\begin{itemize}
-\item{\textbf{[Award Name]} -- [Event/Organization] ([Year]).}
-\end{itemize}
-
-% ============================================================
-%     REFERENCES
-% ============================================================
-
-\section{References}
-\vspace{1pt}
-\begin{itemize}
-\item{Available upon request.}
+\item {\textbf{Python for Data Science and Machine Learning Bootcamp} -- Udemy.}
+\item {\textbf{Languages}: English (fluent), Mandarin (fluent), Malay (conversational).}
+\item {References available upon request.}
 \end{itemize}
 
 \end{document}

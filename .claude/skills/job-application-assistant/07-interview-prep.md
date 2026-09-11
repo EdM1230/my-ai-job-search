@@ -16,42 +16,49 @@ Keep answers to 1-2 minutes. Be specific. End with what you learned or would do 
 
 <!-- These are populated by /setup from your actual experience. Below are templates showing the format. -->
 
-### 1. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT - what was happening, what was the problem]
-**T:** [YOUR RESPONSIBILITY - what you specifically needed to do]
-**A:** [WHAT YOU DID - specific actions, tools, methods]
-**R:** [OUTCOME - measurable results, adoption, impact]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### 1. Vending machine supplier landing page (independent testing, CRO)
+**S:** A vending machine supplier at TTIM Marketing was running Google Ads and pulling organic search traffic to a landing page that converted form opt-ins at 4%. Spend was going out, leads were not coming back.
+**T:** I owned the page's conversion rate for a 3-month campaign. There was no supervising marketer - planning and running the testing was mine.
+**A:** I instrumented the page with Microsoft Clarity and worked through heatmaps and session recordings rather than guessing. The recordings showed a consistent pattern: visitors were not finding proof the product actually worked. The company already had customer results, but they were buried in internal onboarding slides. I proposed lifting them onto the page as a results carousel, then planned and ran the page tests myself across the campaign.
+**R:** Form opt-in conversion went from 4% to 14% over the three months, and the leads coming through were higher-intent because they had self-qualified against real customer outcomes.
+**Use for:** "Tell me about a time you used data to make a decision", "Describe a project you owned end to end", "Give an example of improving a metric"
 
-### 2. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT]
-**T:** [YOUR RESPONSIBILITY]
-**A:** [WHAT YOU DID]
-**R:** [OUTCOME]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### 2. Agency website performance rebuild (technical SEO)
+**S:** Pixelmites Digital's own website took 7 seconds to load. For a digital agency that is both a technical SEO liability and a credibility problem in front of prospects.
+**T:** I was responsible for diagnosing the bottlenecks and getting load time down.
+**A:** I profiled the site with PageSpeed Insights and Chrome DevTools to find where the time was actually going rather than applying a generic checklist. Then I worked through it: migrated to a new hosting platform, moved DNS to Cloudflare, compressed images and video, removed the hero and background video loading entirely, optimised memory usage, and tuned caching settings.
+**R:** Load time dropped from 7 seconds to under 1 second - a roughly 7x improvement on a key technical SEO and Core Web Vitals factor.
+**Use for:** "Walk me through a technical problem you solved", "What do you know about technical SEO?", "Tell me about a time you improved something nobody asked you to fix"
 
-### 3. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT]
-**T:** [YOUR RESPONSIBILITY]
-**A:** [WHAT YOU DID]
-**R:** [OUTCOME]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### 3. NLP coaching program landing page (diagnosis from user behaviour)
+**S:** An NLP coaching program was sending Facebook and Instagram ad traffic to a cluttered landing page that was not converting.
+**T:** Rebuild the page so paid social traffic converted into sign-ups.
+**A:** Before redesigning anything I watched Clarity session recordings. The problem was not the offer - visitors did not know where to look. I rebuilt the page around a clear visual hierarchy and a single path to the sign-up action.
+**R:** The rebuilt page converted Facebook and Instagram traffic at 6%, and a noticeably higher share of sign-ups actually attended their sessions with cameras on - a better-qualified audience, not just more of them.
+**Use for:** "Tell me about a redesign you led", "How do you approach a page that isn't working?", "Give an example of understanding a user"
+
+### 4. Two concurrent freelance engagements alongside full-time study (ownership, prioritisation)
+**S:** Since August 2024 I have been freelancing for Pixelmites Digital, and from February 2025 for TTIM Marketing as well, while studying full time at Monash with a WAM of 70.
+**T:** Deliver client work to deadline at both agencies without letting either the work or my degree slip.
+**A:** [TO CONFIRM - fill in how you actually manage this: how you schedule client work around classes, how you set expectations with the two agencies, what you do when deadlines collide. Interviewers will push on the specifics, so this needs your real system, not a generic answer about time management.]
+**R:** 10+ web projects delivered from design through launch across the two roles, while maintaining a Distinction average.
+**Use for:** "How do you manage competing priorities?", "How do you handle pressure?", "Tell me about balancing commitments"
 
 <!-- Add more STAR examples as needed. Aim for 4-6 covering different competencies. -->
 
 ## Common Tough Questions
 
-### "Why did you leave [previous company]?"
-> [PREPARE YOUR ANSWER - be honest, forward-looking, no negativity about former employer]
+### "Why an internship when you already freelance for two agencies?"
+> This replaces the standard "why did you leave" question - both freelance engagements are ongoing, so there is no departure to explain. Answer honestly: freelance work has taught the conversion and technical side, but it is solo and page-scoped. An agency internship offers mentorship from experienced practitioners, exposure to full campaign management, and the chance to see how the strategy above the landing page gets set. Be ready for the obvious follow-up: whether you will keep freelancing during the placement, and how that would work.
 
-### "You don't have [specific skill/experience]."
-> [PREPARE YOUR ANSWER - acknowledge the gap, bridge to adjacent experience, show willingness to learn]
+### "You have not actually run ad campaigns."
+> This is the real gap and it will come up in any PPC interview. Do not bluff it. Acknowledge it directly: the work has been on the destination, not the campaign - building and optimising the pages that Google Ads and Meta traffic lands on. Then bridge: that is the half of paid media most beginners ignore, and it means you already read performance data and think in conversion rates rather than clicks. Close on the ask: the internship is specifically to build the campaign-management half - bidding, keyword research, ad copy testing, budget pacing. Related gaps to be ready for: no Google Ads/Meta certifications, no GTM, no Looker Studio, GA4 at a basic level.
 
 ### "Where do you see yourself in 5 years?"
-> [PREPARE YOUR ANSWER - show ambition aligned with the role's growth path]
+> Graduating Nov 2028, so five years out is roughly two to three years into a full-time career. Aim at performance marketing specifically rather than generalist marketing: owning both the campaign and the page it points at, with enough analytics depth (Business Analytics minor, Python, R) to measure it properly. Tie it to the employer where honest - agency-side breadth across client industries is a genuine reason to want this kind of role.
 
 ### "What's your biggest weakness?"
-> [PREPARE YOUR ANSWER - genuine weakness with concrete mitigation strategy]
+> [TO CONFIRM - this one has to be yours. A derived answer will not survive the follow-up question, and this is the single question where an invented answer is most obvious to an experienced interviewer. Pick something genuinely true, not a humblebrag, and pair it with what you concretely do about it.]
 
 ### "Why this company specifically?"
 > Customize per company. Must reference: specific projects, company values, market position, or team structure. Never give a generic answer.
