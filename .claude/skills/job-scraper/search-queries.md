@@ -13,12 +13,42 @@ The `site:` query templates in this file are the **WebSearch fallback** — for 
 ## Search Sites
 
 Primary (Malaysian job boards - none of these has a CLI yet; scaffold one with `/add-portal`):
-- **jobstreet.com.my** - Malaysia's largest general job board, and the main source for KL internships
-- **linkedin.com/jobs** - LinkedIn job listings (filter: Malaysia / Kuala Lumpur); also covered by the `linkedin-search` CLI, which runs automatically
-- **hiredly.com** (formerly WOBB) - strong for Malaysian internships and junior roles at startups and agencies
-- **internsheeps.com** / **ricebowl.my** - Malaysia-specific internship boards (optional)
 
-> **Note:** the four shipped portal CLIs (Jobindex, Jobnet, JobBank, JobDanmark) are **Danish** and will return nothing useful for a KL search. Only `linkedin-search` and `freehire-search` are country-agnostic. Run `/add-portal` for JobStreet or Hiredly to get proper CLI coverage of this market.
+| Board | Status as of 2026-09-14 | How to read it |
+|---|---|---|
+| **linkedin.com/jobs** | **Working** - the main source so far | `linkedin-search` CLI, or the `jobs-guest` search endpoint on **`www.linkedin.com`** |
+| **my.hiredly.com** (formerly WOBB) | **Working** - best source for Malaysian internships; the only dedicated SEO internships found came from here | Listings are JS-rendered, so page fetches return an empty shell. Use the **sitemap** instead (see below) |
+| **my.jobstreet.com** | **Blocked by Cloudflare** | Serves a `Just a moment...` bot challenge to datacenter IPs. Do not attempt to defeat it. Works from a normal browser on a home connection |
+| **malaysia.indeed.com** | **Untested - needs allowlisting** | See the Indeed note below |
+| **internsheeps.com** / **ricebowl.my** | Untested | Malaysia-specific internship boards (optional) |
+
+### Hiredly via sitemap (the method that works)
+
+Hiredly's `robots.txt` advertises a sitemap and sets `Allow: /`. One request gets every live job URL, and the slugs encode company and title, so filtering happens offline with no further requests:
+
+```bash
+curl -sS https://my.hiredly.com/sitemap-jobs.xml -o hj.xml
+grep -o "<loc>[^<]*</loc>" hj.xml | sed 's|</\?loc>||g' | sort -u > all.txt
+grep -iE "job-.*(seo|search-engine)" all.txt
+grep -iE "intern" all.txt | grep -iE "digital|marketing|seo|performance|web"
+```
+
+Keep the previous run's `all.txt` and `comm -13 old new` to get only what was added since - and a URL that has *dropped out* is a posting that has closed. This is how the Hypercharge Digital internship was caught closing between 09-11 and 09-14.
+
+### Indeed Malaysia (added on request, 2026-09-14 - not yet verified)
+
+Indeed's country domain is **`malaysia.indeed.com`** (`my.indeed.com` and `www.indeed.com` also resolve). As of 2026-09-14 **all three are denied by the cloud environment's network policy** - the proxy rejects CONNECT before the request leaves. To use Indeed from a cloud session, add to the environment's **Custom** allowed-domains list:
+
+```text
+malaysia.indeed.com
+www.indeed.com
+```
+
+**Expect bot protection even then.** Indeed blocks datacenter IPs more aggressively than any other board on this list, so a cloud session may get a challenge page exactly like JobStreet's. If that happens, **do not try to defeat the challenge** - run the scrape from a local machine instead, where the residential IP and a real browser make it a non-issue. Check `https://malaysia.indeed.com/robots.txt` for a sitemap first: if Indeed publishes one, the Hiredly method above is cheaper and more reliable than fetching search pages.
+
+> **Note:** the four shipped portal CLIs (Jobindex, Jobnet, JobBank, JobDanmark) are **Danish** and will return nothing useful for a KL search. Only `linkedin-search` and `freehire-search` are country-agnostic - and `freehire` is tech-first, so it returns little for marketing roles. Run `/add-portal` for JobStreet or Hiredly to get proper CLI coverage of this market.
+
+> **Known environment issue:** in Anthropic-hosted cloud sessions, **Bun cannot complete TLS through the egress proxy** (CONNECT succeeds, the tunnelled handshake resets), which breaks the `linkedin-search` CLI. `curl` and WebFetch against the same endpoints work fine. Headless Chromium cannot reach any host at all. None of this applies when running locally.
 
 Secondary (company career pages via Google):
 - Direct Google searches with `site:` filters for known target companies
@@ -46,6 +76,9 @@ site:hiredly.com "SEO" OR "PPC" intern Kuala Lumpur
 site:linkedin.com/jobs "SEO intern" Malaysia
 site:linkedin.com/jobs "performance marketing intern" Kuala Lumpur
 site:linkedin.com/jobs "search engine marketing intern" Malaysia
+site:malaysia.indeed.com "SEO intern" Kuala Lumpur
+site:malaysia.indeed.com "digital marketing intern" SEO Kuala Lumpur
+site:malaysia.indeed.com "PPC" OR "paid search" intern Kuala Lumpur
 ```
 
 ### Priority 2: Technical SEO, CRO and paid media (domain expertise)
@@ -61,6 +94,9 @@ site:linkedin.com/jobs "technical SEO" Kuala Lumpur Malaysia
 site:linkedin.com/jobs "Google Ads" intern Kuala Lumpur
 site:jobstreet.com.my 数码营销 实习 吉隆坡
 site:linkedin.com/jobs SEO 实习生 马来西亚
+site:malaysia.indeed.com "technical SEO" Kuala Lumpur
+site:malaysia.indeed.com "conversion rate optimisation" OR "CRO" Kuala Lumpur
+site:malaysia.indeed.com "Google Ads" intern Kuala Lumpur
 ```
 
 ### Priority 3: Adjacent marketing and analytics roles
@@ -74,6 +110,8 @@ site:jobstreet.com.my "growth marketing" intern Kuala Lumpur
 site:jobstreet.com.my "web developer intern" WordPress Kuala Lumpur
 site:hiredly.com "digital marketing" intern Kuala Lumpur
 site:linkedin.com/jobs "marketing intern" analytics Kuala Lumpur
+site:malaysia.indeed.com "marketing analytics intern" Kuala Lumpur
+site:malaysia.indeed.com "web developer intern" WordPress Kuala Lumpur
 ```
 
 ### Priority 4: Broader digital marketing (wider net)
@@ -86,6 +124,8 @@ site:jobstreet.com.my "digital marketing" internship Kuala Lumpur
 site:jobstreet.com.my "e-commerce" marketing intern Klang Valley
 site:linkedin.com/jobs "digital marketing" intern Malaysia
 site:ricebowl.my marketing internship Kuala Lumpur
+site:malaysia.indeed.com "digital marketing" internship Kuala Lumpur
+site:malaysia.indeed.com "e-commerce" marketing intern Klang Valley
 ```
 
 ## Location Filter
