@@ -86,6 +86,10 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 - Unpaid internships, or roles paying only a token allowance below a real living wage
 - Commute substantially over ~1 hour each way from the Klang Valley
 
+## Output Preferences
+- **Always present job results as a table.** Every `/scrape`, `/rank` and any other list of postings goes in a markdown table, never a prose list or bullets. Columns should at minimum cover: fit, role, company, location, pay, and a clickable apply link. Add a short "why / caution" column where it earns its place. Group by priority (apply first / worth applying / skip / applied / closed) using separate tables rather than one undifferentiated block.
+- Keep commentary short and put it after the table, not before it.
+
 ## Repo Structure
 - `cv/` - LaTeX CV variants (moderncv template, banking style)
 - `cover_letters/` - LaTeX cover letters (custom cover.cls template)
